@@ -1,31 +1,57 @@
 body {
-	font-family: 'Fira Code', 'Menlo', 'Monaco', 'Consolas', 'Lucida Console', monospace, 'xkcd';
-	font-size: 13px;
-	background: #000;
-	color: #fff;
-	max-width: 30em;
-	margin: 1em auto;
+  font-family: 'Inconsolata', 'Menlo', 'Monaco', 'Consolas', 'Lucida Console', monospace, 'xkcd';
+  font-size: 13px;
+  background: #000;
+  color: #fff;
+  max-width: 76ex;
+  margin: 1em auto;
 }
 
 h1 {
-	text-align: center;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	padding-left: .2em;
-	padding-right: .2em;
-	position: relative;
-	font-size: 2em;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: .2em;
+  padding-right: .2em;
+  position: relative;
+  font-size: 2em;
 }
 h1::before,
 h1::after {
-	content: '';
-	background: currentColor;
-	position: relative;
-	display: inline-block;
-	width: 1.5em;
-	height: .05em;
-	border-radius: .05em;
-	vertical-align: 20%;
-	margin: 0 .5em;
+  content: '';
+  background: currentColor;
+  position: relative;
+  display: inline-block;
+  width: 1.5em;
+  height: .05em;
+  border-radius: .05em;
+  vertical-align: 20%;
+  margin: 0 .5em;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+#repos {
+  list-style-type: none;
+  padding-left: 1em;
+}
+#repos > li {
+  padding: 1em 0;
+}
+#repos > li h3 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+#repos > li h3 a {
+  color: inherit;
+}
+#repos > li p:first-of-type {
+  margin-top: 0;
+}
+#repos > li p:last-of-type {
+  margin-bottom: 0;
 }
