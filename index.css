@@ -6,6 +6,11 @@ body {
   max-width: 76ex;
   margin: 1em auto;
 }
+@media (max-width: 76ex) {
+  body {
+    padding: 0 1em;
+  }
+}
 
 h1 {
   text-align: center;
