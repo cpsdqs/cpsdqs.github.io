@@ -4,7 +4,7 @@ body {
   background: #000;
   color: #fff;
   max-width: 76ex;
-  margin: 1em auto;
+  margin: 1em auto 3em auto;
 }
 @media (max-width: 76ex) {
   body {
@@ -50,6 +50,14 @@ h1::after {
 a {
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
+  transition: color 0.3s, text-shadow 0.3s;
+  text-shadow: 0 0 0 transparent;
+}
+@media (hover: hover) {
+  a:hover, #repos > li h3 a:hover {
+    color: #f54784;
+    text-shadow: 0 1px 0 #c52754;
+  }
 }
 
 #repos {
@@ -71,4 +79,18 @@ a {
 }
 #repos > li p:last-of-type {
   margin-bottom: 0;
+}
+
+.animated-character {
+  display: inline-block;
+}
+
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+  }
+  a {
+    color: #000;
+  }
 }
